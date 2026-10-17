@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth stitch-anim-fade-in" style="min-height: 100vh; width: 100%; scroll-behavior: smooth; visibility: visible !important;" data-stitch-orig-opacity="1"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autokiilto — Professional Headlight Restoration &amp; Detailing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#111111',
+            brandCard: '#181818',
+            brandRed: '#E5232E',
+            brandRedHover: '#cf1b25',
+            brandGray: '#A1A1AA',
+            brandBorder: '#27272A',
+          },
+          fontFamily: {
+            headline: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #111111;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .font-headline {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .red-glow {
+      box-shadow: 0 0 25px rgba(229, 35, 46, 0.25);
+    }
+    .red-glow-hover:hover {
+      box-shadow: 0 0 35px rgba(229, 35, 46, 0.45);
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-white antialiased selection:bg-brandRed selection:text-white" data-mode="connect" style="min-height: 100vh; width: 100%; background: rgb(14, 14, 14); color: rgb(255, 255, 255); overflow-x: hidden; scroll-behavior: smooth; display: block; overflow-y: auto !important; visibility: visible !important;" data-stitch-orig-opacity="1">
+
+  <!-- 1. STICKY SLIM NAVIGATION -->
+  <header class="sticky top-0 z-50 w-full bg-[#111111]/90 backdrop-blur-md border-b border-brandBorder transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKfXYc_8kP32D71R13Z2EgWtUv-_YU51l-qw4t-Ab-MPW8r9TeodEes0DnarJidXEP46rWjgfEhMMGLyD1vTbyxXF2lfxKkdTsXMCQmyz6E2oA1yJpWvvEiaETh8Lnjfii1HhO2XMGvYgbLXZ-vzkma-nx7aBugodM7k0H0dBY81o4EKegP-zqNjt9CwGSaJ4llMMLzt8A40ne8KXAYl7oPapbNGku7jRPATg9A6ayhvtOJnKz9qS0n2q9sd7aLw84PIU" alt="Autokiilto Logo" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide uppercase">
+        <a href="#home" class="text-white hover:text-brandRed transition-colors duration-200">Home</a>
+        <a href="#services" class="text-brandGray hover:text-white transition-colors duration-200" onclick="event.preventDefault(); const target = document.getElementById('services'); if (target) { const headerOffset = 80; const elementPosition = target.getBoundingClientRect().top; const offsetPosition = elementPosition + window.pageYOffset - headerOffset; window.scrollTo({ top: offsetPosition, behavior: 'smooth' }); }">Services</a>
+        <a href="#about" class="text-brandGray hover:text-white transition-colors duration-200">About Us</a>
+        <a href="#contact" class="text-brandGray hover:text-white transition-colors duration-200" onclick="document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}); return false;">Contact</a>
+      </nav>
+
+      <!-- Book Now Action -->
+      <div class="flex items-center gap-4"><a href="#contact" class="hidden sm:inline-flex items-center justify-center bg-brandRed hover:bg-brandRedHover text-white font-headline text-xs uppercase tracking-wider font-semibold px-4 py-2.5 transition-all duration-300 red-glow">Get a Quote</a></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION — MOST IMPORTANT -->
+    <section id="home" class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden border-b border-brandBorder" style="scroll-margin-top: 6rem;">
+      <!-- Background Ambient Glow -->
+      <div class="absolute -top-40 right-1/4 w-96 h-96 bg-brandRed/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          
+          <!-- Left Column: Compelling Copy & CTA -->
+          <div class="lg:col-span-5 flex flex-col justify-center space-y-6">
+            
+
+            <h1 class="text-4xl sm:text-5xl xl:text-6xl font-bold font-headline leading-[1.08] tracking-tight text-white">
+              DON’T REPLACE IT.<br>
+              <span class="text-brandRed">RESTORE IT.</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-zinc-300 font-normal leading-relaxed">
+              Restore your headlights to a clear, like-new appearance without the high cost of replacement.
+            </p>
+
+            <div class="p-4 bg-brandCard/80 border-l-2 border-brandRed rounded-r-sm">
+              <p class="text-sm text-brandGray leading-normal">
+                Professional headlight restoration. Less cost. Better clarity. A cleaner look.
+              </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="#contact" class="flex items-center justify-center bg-brandRed hover:bg-brandRedHover text-white font-headline text-sm uppercase tracking-wider font-semibold px-7 py-4 red-glow red-glow-hover transition-all duration-300">
+                GET A FREE QUOTE
+              </a>
+              <a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20book%20a%20headlight%20restoration." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2.5 border border-zinc-700 hover:border-white bg-[#161616] hover:bg-[#202020] text-white font-headline text-sm uppercase tracking-wider font-medium px-6 py-4 transition-all duration-300" aria-label="Contact Autokiilto on WhatsApp">
+                <svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.176 8.176 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.07l-.29-.17-3.11.82.83-3.03-.19-.3a8.21 8.21 0 01-1.26-4.49c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.98-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.23-.16-.48-.28z"></path>
+                </svg>
+                <span class="">CHAT ON WHATSAPP</span>
+              </a>
+            </div>
+
+            <!-- Key Quick Value Points -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-brandBorder/80">
+              
+              <div>
+                <p class="text-xs uppercase text-brandGray font-medium">Cost</p>
+                <p class="text-lg font-headline font-bold text-white">1/5th</p>
+                <p class="text-[11px] text-zinc-400">Of replacement</p>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Right Column: Dramatic Before-and-After Comparison Hero (2012 Toyota Headlight) -->
+          <div class="lg:col-span-7">
+            <div class="relative group rounded-lg overflow-hidden border border-brandBorder bg-[#0c0c0c] shadow-2xl">
+              
+              <!-- Top Spec Bar -->
+              <div class="px-4 py-2.5 bg-[#171717] border-b border-brandBorder flex items-center justify-between text-xs font-mono">
+                <span class="flex items-center gap-2 text-zinc-300"><span class="w-2 h-2 rounded-full bg-brandRed"></span> PASSENGER HEADLIGHT OPTICAL RESTORATION</span>
+                
+              </div>
+
+              <!-- Split Image Container -->
+              <div class="relative w-full aspect-[16/9] overflow-hidden bg-black">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEUvd_fZc4ybDkTB9qbb7_z4NPyTmaq8OyMcA2gy-SzzU-HDDgLRxvFqq8sWA_dBuaVkBFeFcgrpZfGTjdur8UAsAdWGQjZMJQOrmem5FeY5U44Zczwyn1dONvQ7Mc9KJut8Ks5Twzz8ybVsD7kHFDdmvFtaxoNTofJ6NtJSniU_fFqzYJ10k1qxS0hEcvkBCkD50CDD_9eHRoffNcTuB-DyOBeCKcCGU7KtJkH0cl3BNPbk-7Wi-LBg" alt="Passenger headlight optical restoration before and after on red car" class="w-full h-full object-cover">
+              </div>
+
+              <!-- Bottom caption info -->
+              <div class="p-4 bg-[#141414] border-t border-brandBorder flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                <div class="flex items-center gap-4 text-zinc-400">
+                  
+                  
+                </div>
+                <div class="inline-flex items-center gap-1.5 text-brandRed font-medium">
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION -->
+    <section id="services" class="py-24 bg-[#131313] border-b border-brandBorder" style="scroll-margin-top: 5rem;">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mx-auto mb-16 text-center">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-headline font-bold uppercase tracking-tight text-white">
+            OUR SERVICES
+          </h2>
+          <p class="mt-4 text-zinc-200 font-semibold tracking-tight max-w-2xl mx-auto leading-relaxed text-4xl md:text-5xl">Do you know our services?</p>
+        </div>
+
+        <!-- Three Simple, Elegant Service Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Service 1: Headlight Restoration -->
+          <div class="bg-[#181818] border border-brandBorder hover:border-brandRed/60 p-8 flex flex-col justify-between transition-all duration-300 group">
+  <div>
+    <div class="w-full h-48 rounded-lg overflow-hidden border border-brandBorder mb-6 bg-black">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD81vpmtjwWPUuReEMK7Z4AHpf5zAcOnR26KHMGtQ1xdUVNcv1t1pDCmssCMS0P6fxqs6r_zsDs74AK2pAaY_QN9tYxJG7utPmouy14EOx0pAuLlrcFKKIYlfZF1_oeoO5HAuh9RQag-c6qrzQqu1hC-j11NCa2RjNAzThTbxLRkhk86T7qNysFsti32u_MF2XjkDzdYUpHx5nAmPJcfDJ58YRbOXE6Z2VsktzelqmN3gbjlBA-ASLlqQ" alt="Weathered front headlight and rear taillight restoration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+    </div>
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs uppercase tracking-widest text-brandRed font-mono font-bold">01 // HEADLIGHTS &amp; TAILLIGHTS</span>
+    </div>
+    <h3 class="text-xl font-headline font-bold text-white mb-3">Headlight &amp; Taillight Restoration</h3>
+    <p class="text-sm leading-relaxed text-white">Complete restoration for both front headlights and rear taillights. We eliminate cloudiness, yellowing, and scratches to bring back crystal-clear clarity and safety.</p>
+  </div>
+  <div class="mt-6 pt-4 border-t border-brandBorder/60 flex items-center justify-between text-xs font-medium text-zinc-300"><span class="">Front &amp; Rear Optics</span><a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20book%20a%20headlight%20restoration." target="_blank" rel="noopener noreferrer" class="text-brandRed hover:text-white transition-colors" aria-label="Contact Autokiilto on WhatsApp">Inquire →</a></div>
+</div>
+
+          <!-- Service 2: Headlight Polishing -->
+          <div class="bg-[#181818] border border-brandBorder hover:border-brandRed/60 p-8 flex flex-col justify-between transition-all duration-300 group"><div class="">
+    <div class="grid grid-cols-2 gap-1.5 h-48 w-full rounded-lg overflow-hidden bg-black/40 border border-brandBorder mb-6 relative group"><div class="relative h-full w-full overflow-hidden bg-black"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAIBprPzG4N4vwScH7NJiRdE3WOr3yOV05ezNHuuL_0Ofb4uEgMQTs0IS1doz8fM4vBiEFhkX9pT3WxTuWiIGpOmPCXHdl-VMrS68OtTxVixMcjT6AVyNwn-3B7wfNRFSnpsc4-A6zlFFlR0HiIkMG0RtMoodoZ1OLuhAh6_Urv8jfG0nGaOd9QHhgDQww7Qa8TuCw715y9irMv8YOk-6wvXwVNntsU3GEq6CkyYHb6aXGBxEta_k4f8Yyff5ql_ueca4" alt="Headlight Before Restoration - Yellowed and Foggy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute top-2 left-2 px-2 py-0.5 bg-black/75 backdrop-blur-sm border border-white/10 text-[10px] font-mono uppercase tracking-wider text-zinc-300 rounded-sm pointer-events-none">BEFORE</div></div><div class="relative h-full w-full overflow-hidden bg-black"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDokIjLpXidJW3JNRdu76WlAikQ6wG_NCnqnCulFXtduZGoBCuNADNBV7s940mTjdY-BCBV6F6algbCAkdP7ZPSB5rQiphgKt27l4Rq2jLqKQuoKK-7rmtGrgk7SfGVyL4gPOHuIrmT-RWA-Bqo0Ygtvc4lmolL8yjHSl4fubiYlvzrgpka_FLK71K08GiavkaPl7aeHB6wq8cHfP45LO4NGCJO6O6GbQSwTydoaMvtPgWI9JPIHl-Z4VG7Kg8gwSOqx30" alt="Headlight After Restoration - Clear and Restored" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"><div class="absolute top-2 right-2 px-2 py-0.5 bg-brandRed/90 backdrop-blur-sm border border-brandRed text-[10px] font-mono uppercase tracking-wider text-white font-bold rounded-sm pointer-events-none">AFTER</div></div></div>
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs uppercase tracking-widest text-brandRed font-mono font-bold">02 // RESTORATION</span>
+    </div>
+    <h3 class="text-xl font-headline font-bold text-white mb-3">Headlight De-Clouding &amp; Clarity Restoration</h3>
+    <p class="text-zinc-400 text-sm leading-relaxed">Complete elimination of UV yellowing, haze, cloudiness, and surface micro-scratches through multi-stage professional optical resurfacing and precision polishing to restore factory light output and visual clarity.</p>
+  </div>
+  <div class="mt-6 pt-4 border-t border-brandBorder/60 flex items-center justify-between text-xs font-medium text-zinc-300">
+    <span class="">Optical Clarity</span>
+    <a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20book%20a%20headlight%20restoration." class="text-brandRed hover:text-white transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Contact Autokiilto on WhatsApp">Inquire →</a>
+  </div></div>
+
+          <!-- Service 3: Automotive Detailing -->
+          <div class="bg-[#181818] border border-brandBorder hover:border-brandRed/60 p-8 flex flex-col justify-between transition-all duration-300 group"><div class="">
+    <div class="w-full h-48 rounded-lg overflow-hidden border border-brandBorder mb-6 bg-black relative group">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATcm4FyFah-lGv-8Fuc23JXlbyYKYa1m0hkedN1eSrnQceL1Ih7m1OwfUm-1Xbyhiqsp_Lgsv-PzKzM6oQ7FFnDvomC-uDbkfpTOHHhgVDrluCqMPlxhGS2fpE9xHN0IxpBzvN9yKyCyvnxW7aCoNiGXdEp3Rp2HtgQHwQZjlVSR3fV2flQb0DlU7UCb9-8fZe-A_-t7Iv90_ivEvc4KEgkb9iB5fuhC_YES4EvZm1KQGhI8z2E6SGQQ" alt="Headlight restoration scratch and rock chip elimination before and after comparison" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+    </div>
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs uppercase tracking-widest text-brandRed font-mono font-bold">03 // SCRATCH &amp; CHIP REMOVAL</span>
+    </div>
+    <h3 class="text-xl font-headline font-bold text-white mb-3">Scratch &amp; Rock Chip Elimination</h3>
+    <p class="text-zinc-400 text-sm leading-relaxed">Advanced micro-sanding and multi-stage rotary compounding to completely eliminate road rash, deep stone chip pitting, and surface scratches, restoring factory optical depth.</p>
+  </div>
+  <div class="mt-6 pt-4 border-t border-brandBorder/60 flex items-center justify-between text-xs font-medium text-zinc-300">
+    <span class="">Scratch &amp; Pitting Repair</span>
+    <a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20inquire%20about%20scratch%20and%20stone%20chip%20removal." class="text-brandRed hover:text-white transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Contact Autokiilto on WhatsApp">Inquire →</a>
+  </div></div>
+
+        </div>
+
+        <!-- Prominent Before-and-After Gallery Section -->
+        <div class="mt-20 pt-16 border-t border-brandBorder">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+            <div>
+              <span class="text-xs uppercase font-mono tracking-widest text-brandRed font-semibold">Verified Visual Proof</span>
+              <h3 class="text-2xl sm:text-3xl font-headline font-bold uppercase tracking-tight text-white mt-1">
+                Restoration Gallery &amp; Results
+              </h3>
+            </div>
+            <p class="text-xs sm:text-sm text-brandGray mt-2 md:mt-0">
+              Clear before-and-after results illustrating restored optical clarity and aesthetics.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Gallery Item 1: 2012 Toyota Headlight Restoration Result -->
+            <div class="bg-[#181818] border border-brandBorder overflow-hidden">
+              <div class="relative aspect-[16/9] w-full bg-black">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCro8RtVIFZ-R6z4jR3MBbrs8P3pBuARWPAPaRfnB92WRT185OIMpIS0cUnmqAGpjQCyPAqjYxq0A9Z90dret1b_KwrH197NMohBKt4KpmwBagMu7RuNEkH3X-pzrD7m73FiBdBc57bD0lkGB9emnHIyWgN1Gaaxot3z5zTvCnlYgDgzlr0dw0djm2s17NrnhY3xF9ESgV0hiBpZe3Vu5f-43GVBirVdNZWh4G5UBh_8iyAowqoi8zNjg" alt="2008 Skoda restored headlight in detailing studio" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-mono uppercase bg-[#252525] text-white px-2.5 py-1 border border-brandBorder">Case 01</span>
+                  <span class="text-xs text-brandRed font-semibold uppercase tracking-wider">Restored 2012 Toyota Headlight</span>
+                </div>
+                <h4 class="text-lg font-headline font-bold text-white mt-3">2012 Toyota Front Headlight Restoration</h4>
+                <p class="text-xs sm:text-sm mt-2 leading-relaxed">Complete restoration for both front headlights and rear taillights. We eliminate cloudiness, yellowing, and scratches to bring back crystal-clear clarity and safety.</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 2: Luxury Headlight Precision Restoration Result -->
+            <div class="bg-[#181818] border border-brandBorder overflow-hidden">
+              <div class="relative aspect-[16/9] w-full bg-black">
+                <img src="https://lh3.googleusercontent.com/aida/AEtjO1XDRqWffzpuLARMw65lPzBjdojpekh0gtZy0F9C538uDGUADL63B51REunExmd_K1WWgOruRlgj5CwC_GWFo7TZ1gco7Debo6mRAapHbCfJFRODU6tT96MQccpcNuZBnCTlV6Zh89zcORPEM7L43f82xtEQTiFmJogeRKflIvdyeQN_1j8Fjqsho3m1h2UevqvnGwpJ7ql7HezQluqkycNdJvkpzycAcisidzDGOePKxSuRXvx2iSXkCgDg" alt="Luxury BMW Front Headlight Before and After" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-mono uppercase bg-[#252525] text-white px-2.5 py-1 border border-brandBorder">Case 02</span>
+                  <span class="text-xs text-brandRed font-semibold uppercase tracking-wider">Luxury Modern Headlight Unit</span>
+                </div>
+                <h4 class="text-lg font-headline font-bold text-white mt-3">Executive Laser &amp; LED Optical Restoration</h4>
+                <p class="text-xs sm:text-sm text-zinc-400 mt-2 leading-relaxed">Complete elimination of UV yellowing, haze, cloudiness, and surface micro-scratches through multi-stage professional optical resurfacing and precision polishing to restore factory light output and visual clarity.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. ABOUT US SECTION -->
+    <section id="about" class="py-24 bg-brandDark border-b border-brandBorder" style="scroll-margin-top: 6rem;">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left: About Image & Craftsmanship visual -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-sm overflow-hidden border border-brandBorder bg-black">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPaD7f05GH9tTANXQc-_9wwQwa98TM2ugfUY5NArSz3K7Bk7IKhKwRc-GJk3T8zNQ3awHlWDFxz2oEjGFLgxGB_17WVe56zZoKeTD0ZcK1q1uumAjwYL4QksjsAA5T9-W2rqTDuQzhfuNSaH3X63X4gscf_RfdOpftRYcR2ASWmV8C3osd0UVd7ODNwOgwJA11mfA30sIM842UAevfiPwrrkluRUL23lfQGx9gHsB_uNppoCRoebwPN2ttmp21RwGcTw" alt="Autokiilto Automotive Detailing Optics" class="w-full h-auto object-cover max-h-[460px]">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between text-xs text-zinc-300 font-mono">
+                <span class="">AUTOKIILTO WORKSHOP</span>
+                <span class="text-brandRed">HELSINKI / FINLAND</span>
+              </div>
+            </div>
+            <!-- Subtle accent border element -->
+            <div class="hidden sm:block absolute -bottom-3 -right-3 w-24 h-24 border-r-2 border-b-2 border-brandRed pointer-events-none"></div>
+          </div>
+
+          <!-- Right: About Copy & 3 Core Benefits -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="flex items-center gap-2 text-brandRed text-xs font-bold uppercase tracking-widest">
+              <span class="w-6 h-[2px] bg-brandRed"></span>
+              Our Philosophy
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-headline font-bold uppercase tracking-tight text-white">
+              ABOUT AUTOKIILTO
+            </h2>
+
+            <p class="text-base sm:text-lg text-zinc-300 leading-relaxed">
+              At Autokiilto, we help drivers restore the appearance of cloudy, yellowed, and oxidized headlights. Our goal is to provide professional restoration at a more affordable cost than replacing the entire headlight assembly.
+            </p>
+
+            <!-- 3 Simple Benefits as Requested -->
+            <div class="pt-4 space-y-4">
+              
+              <div class="flex items-start gap-4 p-4 bg-[#171717] border border-brandBorder">
+                <div class="w-8 h-8 rounded-full bg-brandRed/20 text-brandRed flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-sm">
+                  ✓
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-white text-base">Affordable Alternative to Replacement</h4>
+                  <p class="text-xs sm:text-sm text-brandGray mt-0.5">
+                    Avoid spending hundreds to thousands of euros on brand new headlight units when proper optical resurfacing yields showroom transparency.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 bg-[#171717] border border-brandBorder">
+                <div class="w-8 h-8 rounded-full bg-brandRed/20 text-brandRed flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-sm">
+                  ✓
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-white text-base">Professional Restoration Finish</h4>
+                  <p class="text-xs sm:text-sm text-brandGray mt-0.5">
+                    Utilizing progressive wet abrasives, fine jeweling polishes, and durable UV sealants engineered to withstand harsh weather conditions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 bg-[#171717] border border-brandBorder">
+                <div class="w-8 h-8 rounded-full bg-brandRed/20 text-brandRed flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-sm">
+                  ✓
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-white text-base">Personalized Customer Service</h4>
+                  <p class="text-xs sm:text-sm text-brandGray mt-0.5">
+                    Direct communication, transparent quotes via WhatsApp or phone, and honest evaluation of your vehicle’s lighting clarity.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-[#141414]" style="scroll-margin-top: 6rem;">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-4xl mx-auto bg-brandDark border border-brandBorder p-8 sm:p-12 relative overflow-hidden">
+          <!-- Subtle top red accent line -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-brandRed"></div>
+
+          <div class="text-center max-w-2xl mx-auto mb-10">
+<h2 class="text-4xl sm:text-5xl font-headline font-bold uppercase tracking-wider text-white mt-2 text-center">
+  CONTACT US
+</h2>
+</div>
+
+          <!-- Contact Details Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 border-y border-brandBorder my-8 text-center"><div class="flex flex-col items-center justify-center space-y-1 text-center"><span class="text-xs uppercase font-mono tracking-wider text-brandRed font-semibold">WhatsApp Fast Quote</span><a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20book%20a%20headlight%20restoration." target="_blank" rel="noopener noreferrer" class="text-lg font-headline font-bold text-white hover:text-[#25D366] transition-colors" aria-label="Contact Autokiilto on WhatsApp">+358 40 157 2120</a><span class="text-xs text-zinc-400">Send photos anytime</span></div><div class="flex flex-col items-center justify-center space-y-1 text-center"><span class="text-xs uppercase font-mono tracking-wider text-brandRed font-semibold">Email Inquiries</span><a href="mailto:contact@autokiilto.com" class="text-lg font-headline font-bold text-white hover:text-brandRed transition-colors">contact@autokiilto.com</a><span class="text-xs text-zinc-400">Workshop in Hämeenlinna</span></div></div>
+
+          <!-- Two Large Contact Action Buttons -->
+          <div class="flex justify-center items-center pt-2"><a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20book%20a%20headlight%20restoration." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-brandRed hover:bg-brandRedHover text-white font-headline text-lg uppercase font-bold tracking-wider py-4 px-10 red-glow red-glow-hover transition-all duration-200 group" aria-label="Contact Autokiilto on WhatsApp"><svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.176 8.176 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.07l-.29-.17-3.11.82.83-3.03-.19-.3a8.21 8.21 0 01-1.26-4.49c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.98-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.23-.16-.48-.28z"></path></svg><span class="">CHAT ON WHATSAPP</span></a></div>
+
+          <p class="text-center text-xs text-brandGray mt-6">
+            Instant diagnostic response on WhatsApp. Send photos of both headlights for an immediate quote.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-brandBorder py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-4"><a href="#home" class="flex items-center gap-4 hover:opacity-90 transition-opacity"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKfXYc_8kP32D71R13Z2EgWtUv-_YU51l-qw4t-Ab-MPW8r9TeodEes0DnarJidXEP46rWjgfEhMMGLyD1vTbyxXF2lfxKkdTsXMCQmyz6E2oA1yJpWvvEiaETh8Lnjfii1HhO2XMGvYgbLXZ-vzkma-nx7aBugodM7k0H0dBY81o4EKegP-zqNjt9CwGSaJ4llMMLzt8A40ne8KXAYl7oPapbNGku7jRPATg9A6ayhvtOJnKz9qS0n2q9sd7aLw84PIU" alt="Autokiilto Logo" class="h-8 w-auto object-contain"><span class="text-xs text-zinc-500 border-l border-zinc-800 pl-4">Finland Precision Optics</span></a></div>
+
+      <div class="text-xs text-zinc-400 text-center md:text-right font-medium">
+        Autokiilto | Professional Headlight Restoration &amp; Automotive Detailing
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wa.me/358401572120?text=Hello%20Autokiilto%2C%20I%20would%20like%20to%20book%20a%20headlight%20restoration." target="_blank" rel="noopener noreferrer" aria-label="Contact Autokiilto on WhatsApp" class="fixed bottom-5 right-5 z-50 flex items-center gap-2 bg-[#161616] hover:bg-[#202020] border border-zinc-700 hover:border-white text-white px-4 py-2.5 rounded-full shadow-2xl transition-all duration-300 red-glow-hover"><svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.176 8.176 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.07l-.29-.17-3.11.82.83-3.03-.19-.3a8.21 8.21 0 01-1.26-4.49c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.98-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.23-.16-.48-.28z"></path></svg><span class="font-headline text-xs font-semibold tracking-wider uppercase text-white">WhatsApp</span></a>
+
+
+
+
+
+</body></html>
